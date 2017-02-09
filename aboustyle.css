@@ -1,59 +1,90 @@
-div {
-  font-family: 'Raleway', sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+body {
+    background-image: url(images/forest.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: black;
+    padding: 0;
 }
 
-ol {
-  list-style-type:  upper-roman;
-}
-/*#box {
-  height: 800px;
-  border:  2px solid rgba(255,255,255,.2);
-  width: 800px;
-  margin-left: 260px;
-  background: rgba(255,255,255,.4);
-}*/
-
-#container{
-  width: 1000px;
-  text-align: center;
-    background: rgba(255,255,255,.4);
-    margin-left: 200px;
+header {
+    color: white;
+    font-family: Baskerville;
+    margin-left: 6em;
 }
 
 h1 {
-  font-size: 80pt;
+    font-size: 30pt;
+    margin-bottom: 0px;
 }
 
+h5 {
+    font-size: 16pt;
+}
+
+h6 {
+    font-size: 13pt;
+}
+
+.collapsible {
+    width: 70%;
+    margin-left: 10em;
+    font-family: 'Roboto', sans-serif;
+    border: none;
+    box-shadow: none;
+}
 
 h2 {
-  font-size: 50pt;
-
+    margin-bottom: 40px;
+    color: white;
+    border: none;
+    text-align: center;
+    font-family: Baskerville;
+    transition: .5s;
 }
 
-h3 {
-  font-size: 30pt;
+h2:hover {
+    color: rgba(27, 102, 106, 1)
 }
 
-a {
-  text-decoration: none;
-  color: black;
+.header1 {
+    display: flex;
+    height: 20%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    padding-right: 15px;
 }
 
-textarea {
-  margin-left: 10px;
+a,
+.headerli {
+    padding: 25px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-family: Baskerville;
+    font-size: 20pt;
+    transition: .5s;
 }
 
-input {
-  height: 20px;
+a:hover {
+    font-size: 25pt;
+    color: rgba(27, 102, 106, 1)
 }
 
- h1:hover, h2:hover, h3:hover  {
-
-  font-family: 'Raleway Dots', cursive;
-  background-color: rgba(123, 175, 224,.5);
+.collapsible-body {
+    color: white;
+    background-color: rgba(0, 0, 0, .7);
+    font-size: 15pt;
 }
-body{
-  background-image: url(http://www.all-my-favourite-flower-names.com/images/Fotolia_67914682_XS.jpg);
-  background-size: cover;
-  background-attachment: fixed;
+
+@media (max-width: 650px) {
+    .header1 {
+        justify-content: center;
+    }
+    .headerli {
+        background-color: black;
+        padding: 0px;
+        margin-left: 10px;
+        border-radius: 10%;
+    }
 }

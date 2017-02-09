@@ -1,63 +1,63 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <title> About Me</title>
-  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Raleway+Dots" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="aboustyle.css">
+    <title>Val</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
-<div id="box">
-<div id="container">
+    <header>
+        <h1>Val Rigodon </h1>
+        <h5>Rvrigodon@gmail.com</h5>
+        <h6><i>Web Developer</i></h6>
+    </header>
+    <ul class="header1">
+        <li class="headerli"><a href="">About Me</a></li>
+       <!--  I'm Val Rigodon. I am a General Assembly Student from the Per Scholas Code Bridge Program. I am passionate about Web Development, and can't wait to make a full career out of it. My favorite authors are Francesca Lia Block and Shirley Jackson. My favorite artists are Hannah Fury, Orion Rigel Dommisse, and Lana Del Ray. All of these artists have a ethereal, surrealist quality around them and that is something I wish to replicate in my work. -->
+        <li class="headerli"><a href="">Resume</a></li>
+    </ul>
+    <ul class="collapsible" data-collapsible="accordion">
+        <li class="collection-header">
+            <h2>Projects</h2>
+        </li>
+        <li>
+            <div class="collapsible-header">Maze Game</div>
+            <div class="collapsible-body"><span>This game is called 'Oogie's Labyrinth'. The purpose is ot navigate the mouse through the maze without getting hit, and then pressing the button at the end. There is currently only one level.
 
-<h1 onclick="document.getElementById('aboutme').style.display='block'" ><a href="#"> Val </a></h1>
+The way you win is to get throuhg the maze without hitting any of the moving enemies. If you hit one, you will be alerted, and sent back to the beginning of the game.
 
-<div id="aboutme" style="display: none">
-<p>
- I'm Val Rigodon. I am a General Assembly Student from the Per Scholas Code Bridge Program. I am passionate about Web Development, and can't wait to make a full career out of it.
-My favorite authors are Francesca Lia Block and Shirley Jackson. My favorite artists are Hannah Fury, Orion Rigel Dommisse, and Lana Del Ray. All of these artists have a ethereal, surrealist quality around them and that is something I wish to replicate in my work. </p>
+There is also a little player on the screen that can be controlled, however it cannot affect, nor be affected by the gameboard. It might be helpful to use alongside with the cursor. I programmed the board to move up when the player div moves so that it wouldn't be hidden behind the the overflow: hidden styling.
 
-<button onclick="document.getElementById('aboutme').style.display='none'">Hide</button>
+</span></div>
+        </li>
+        <li>
+            <div class="collapsible-header">Travello</div>
+            <div class="collapsible-body"><span>Travello was designed to facilitate the organizing and logging of group trips. We have seen that popular travel apps are focused on the individual and the logistics to the exclusion of the social. This forces travelers to utilize multiple platforms to organize, record, and collaborate on their group adventures which leads to a disjointed overall experience. While group email threads, Slack, and speadsheets offer a centralized location, Travello offers travelers an opportunity to divorce themselves from everyday-use apps. Our target demographic are people looking for travel ideas/inspiration, backpackers, and friend groups from different locations on the map.</span></div>
+        </li>
+        <li>
+            <div class="collapsible-header">y(Our) Story</div>
+            <div class="collapsible-body"><span>Be part of a world-wide story. Add a 'chapter' to the website and have your story continued by someone else, or you can continue someone else's story. There are delete and edit buttons for each chapter.
 
-</p>
-
-</div>
-
-
-  <h2 onclick="document.getElementById('work').style.display='block'"><a href="#"> Work</a></h2>
-
-
-  <div id="work" style="display: none;">
-
-  <p>As I am still a student, I've only done a few small projects that are not live yet. However, I am working on creating a fresh, beautiful, functional portfolio to show off my skills.<br>
-  Here is a list of some of the projects I've done: </p> <br>
-  <ol >
-    <li>Book Promotion Website </li>
-    <li>Music Website</li>
-    <li>Business Website</li>
-    <li>Biography Website</li>
-    <li>A customized calculator</li>
-
-  </ol>
-
-<button onclick="document.getElementById('work').style.display='none'">Hide</button>
-</div>
-
-
-
- <h3 onclick="document.getElementById('contact').style.display='block'"><a href="#"> Contact</a></h3>
-
-
- <div id="contact" style="display: none;">
- <input type="name" name="" placeholder="Name"><br><br>
- <input type="email" name="" placeholder="Email"><br><br>
- <textarea placeholder="message" rows="10" cols="20"></textarea> <br><br>
-<button>Submit</button>
-</div>
-</div>
-
-
-</div>
+The end and beginning of the story are all decided by the users, and it is all anonymous.</span></div>
+        </li>
+        <li>
+            <div class="collapsible-header">Weather Teller</div>
+            <div class="collapsible-body"><span>An app that gives the weather based on the zipcode the user inputs. It is mobile first and uses the Weather Channel API.</span></div>
+        </li>
+        <li>
+            <div class="collapsible-header">Story Sites</div>
+            <div class="collapsible-body"><span>These are single paged websites built around a theme. The websites are mainly a way to exercise my styling and storytelling skills. For example, one of my websites is based on Stephen King's 'Carrie.'</span></div>
+        </li>
+    </ul>
 </body>
+<script type="text/javascript">
+    $('.collapsible').collapsible();
+</script>
+
 </html>

@@ -1,14 +1,55 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
 
-@media (max-width: 650px) {
-  body {
-      background-color: black;
-    }
-    .header1 {
-        justify-content: center;
-    }
+header {
+    color: black;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    padding: 0;
+    text-align: center;
+}
 
+header h1 {
+    font-size: 4.2rem;
+    font-weight: 400;
+}
 
+header a {
+    text-decoration: none;
+    color: #039be5;
+    -webkit-tap-highlight-color: transparent;
+}
+
+h1 {
+    font-size: 30pt;
+    margin-bottom: 20px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+
+h5 {
+    font-size: 16pt;
+    margin: 0px;
+}
+
+h6 {
+    font-size: 13pt;
+    margin: 0;
+}
+
+div {
+    background-color: rgba(0, 0, 0, .7);
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 50px;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    position: relative;
+    text-align: center;
 }
 
 body {
@@ -16,87 +57,18 @@ body {
     background-size: cover;
     background-attachment: fixed;
     background-color: black;
-    padding: 0;
     max-width: 100%;
-    height:auto;
+    height: auto;
 }
 
-header {
-    color: white;
-    font-family: Baskerville;
-    margin-left: 6em;
-}
-
-h1 {
-    font-size: 30pt;
-    margin-bottom: 0px;
-}
-
-h5 {
-    font-size: 16pt;
-}
-
-h6 {
-    font-size: 13pt;
-}
-
-.collapsible {
-    width: 70%;
-    margin-left: 10em;
-    font-family: 'Roboto', sans-serif;
-    border: none;
-    box-shadow: none;
-    margin-top: 10em;
-}
-
-h2 {
-    margin-bottom: 40px;
-    color: white;
-    border: none;
-    text-align: center;
-    font-family: Baskerville;
-    transition: .5s;
-}
-
-h2:hover {
-    color: rgba(27, 102, 106, 1)
-}
-
-.header1 {
-    display: flex;
-    height: 20%;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    padding-right: 15px;
-    margin-top: 8em;
-}
-
-a,
-.headerli {
-    padding: 25px;
-    color: white;
-    font-family: 'Roboto', sans-serif;
-    font-family: Baskerville;
-    font-size: 20pt;
-    transition: .5s;
-     background-color: black;
-      border-radius: 10%;
-       margin-left: 10px;
-
-}
-
-
-
-a:hover {
-    font-size: 25pt;
-    color: rgba(27, 102, 106, 1)
-}
-
-.collapsible-body {
-    color: white;
-    background-color: rgba(0, 0, 0, .7);
+p {
+    width: 50%;
     font-size: 15pt;
+    text-align: center;
+    margin-left: 25%
 }
 
-
+#aboutme {
+    margin-top: 5em;
+    height: 400px;
+}

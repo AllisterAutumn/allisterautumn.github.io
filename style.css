@@ -51,7 +51,9 @@ div {
     position: relative;
     text-align: center;
 }
-
+#slide1{
+  background:url(forest.jpg) 50% 0 no-repeat fixed;
+}
 body {
     background-image: url(forest.jpg);
     background-size: cover;
@@ -65,10 +67,15 @@ p {
     width: 50%;
     font-size: 15pt;
     text-align: center;
-    margin-left: 25%
+    margin-left: 25%;
 }
 
 #aboutme {
     margin-top: 5em;
     height: 400px;
+}
+
+img {
+  display: inline-block;
+  height: 100px;
 }

@@ -1,10 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Lora');
+
+body{
+  padding: 0;
+  margin: 0;
+}
+nav{
+  background-color: #fbdf09;
+  text-align: center;
+
+}
 
 #header {
     color: black;
-    font-family: "Roboto", sans-serif;
+   font-family: 'Lora', serif;
     font-weight: 400;
     padding: 0;
     text-align: center;
+    background-color:#fbdf09;
+    display: flex;
+    height: 30em;
+    display: flex;
+   justify-content: center;
+
+}
+
+#about, #toolbox{
+
+  width: 500px;
+
 }
 
 #header h1 {
@@ -14,14 +37,32 @@
 
 #header a {
     text-decoration: none;
-    color: #039be5;
+    color: #014c65;
     -webkit-tap-highlight-color: transparent;
 }
+#header img{
+  border: 2px solid black;
+  border-radius: 80%;
+  margin: 0 20px 0px 20px;
+}
+
+section{
+  background: linear-gradient(#fbdf09, #0dd7de);
+text-align: center;
+
+}
+section p {
+  font-size: 15pt;
+}
+#slides h1{
+  font-size: 35pt;
+}
+
 h1 {
     font-size: 30pt;
-    margin-bottom: 20px;
-    font-family: "Roboto", sans-serif;
+ font-family: 'Lora', serif;
     font-weight: 400;
+    margin: 0px;
 }
 
 h5 {
@@ -31,28 +72,17 @@ h5 {
 
 h6 {
     font-size: 13pt;
-    margin: 0;
+    margin: 0px;
 }
 
-#header {
-background:url(forest.jpg) 50% 0 no-repeat fixed;
-height: 400px;
-margin: 0;
-padding: 200px 200px 260px 200px;
-text-align: center;
-font-family: "Roboto", sans-serif;
-}
 
-#projects h1 {
-background: #fff 50% 0 no-repeat fixed;
-height: 100px;
-margin-top: 50px;
-padding: 100px 200px 260px 200px;
+section h1 {
+padding: 50px;
 background-size: cover;
 text-align: center;
-font-family: "Roboto", sans-serif;
+font-family: 'Lora', serif;
 font-size: 60pt;
-overflow: hidden;
+
 
 }
 
@@ -75,11 +105,16 @@ padding: 20px;
 }
 
 footer{
-  background:url(images/sunset.jpg) 50% 0 no-repeat fixed;
+  background-color: rgba(13, 215, 222, 1);
 height: 400px;
 margin: 0;
 padding: 200px 200px 260px 200px;
 text-align: center;
-font-family: "Roboto", sans-serif;
+   font-family: 'Lora', serif;
 color: white;
+}
+
+.slidesjs-navigation{
+  padding: 5px;
+  color: #002c2d;
 }

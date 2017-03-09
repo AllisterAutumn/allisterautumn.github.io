@@ -4,67 +4,112 @@
 <head>
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
     <script src="jquery.slides.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
     <title>Val</title>
     <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style1.css">
 </head>
 
 <body>
-    <div id="header">
-        <h1>Val Rigodon </h1>
-        <h5>Rvrigodon@gmail.com</h5>
-        <h6><i>Web Developer</i></h6>
-        <h6><a id="linkedin" href="https://www.linkedin.com/in/rachel-v-rigodon">LinkedIn</a></h6>
-        </header>
-        <p>
-            I'm a Brooklyn bred and Florida raised web developer with a passion for storytelling. My favorite author is Francesca Lia Block and my favorite musical artists are Hannah Fury and Orion Rigel Dommisse, because I am absolutely in love with magical surreality.
-            <br> It is my fingerprint in all the work I do from web development to writing. My favorite storytelling medium so far is animation, however I'm not very good at it, so I'm content to just watch. I'm a graduate of General Assembly and Per Scholas's Codebridge course.
-        </p>
-    </div>
-    <div id="projects">
-        <h1>Projects</h1>
-    </div>
-    <div class="maze">
-        <div class="box">
-            <h1>Oogie's Labyrinth</h1>
-            <p>Oogie's Labyrinth is a game where the aim is to navigate the mouse through the maze without getting hit, and then pressing the button at the end. There is currently only one level. The way you win is to get throuhg the maze without hitting any of the moving enemies. If you hit one, you will be alerted, and sent back to the beginning of the game. There is also a little player on the screen that can be controlled, however it cannot affect, nor be affected by the gameboard. It might be helpful to use alongside with the cursor. I programmed the board to move up when the player div moves so that it wouldn't be hidden behind the the overflow: hidden styling.</p>
+<!-- this is where the nav begins -->
+    <nav>
+        <div class="nav-wrapper">
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="sass.html">About me</a></li>
+                <li><a href="#slides">Projects</a></li>
+                <li><a href="#footer">Contact</a></li>
+            </ul>
         </div>
-        <img class="mazepic" src="images/game.png">
-    </div>
-    <div class="maze">
-        <img class="mazepic" src="images/travello2.png">
-        <div class="box">
-            <h1>Travello</h1>
-            <p>Travello was designed to facilitate the organizing and logging of group trips. We have seen that popular travel apps are focused on the individual and the logistics to the exclusion of the social. This forces travelers to utilize multiple platforms to organize, record, and collaborate on their group adventures which leads to a disjointed overall experience. While group email threads, Slack, and speadsheets offer a centralized location, Travello offers travelers an opportunity to divorce themselves from everyday-use apps. Our target demographic are people looking for travel ideas/inspiration, backpackers, and friend groups from different locations on the map.
+    </nav>
+    <!-- this is here the nav ends -->
+    <!-- this is where the header begins -->
+    <div id="header" >
+        <div id="about">
+            <h1>Val Rigodon </h1>
+            <h5>Rvrigodon@gmail.com</h5>
+            <h6><i>Web Developer</i></h6>
+            <h6><a id="linkedin" href="https://www.linkedin.com/in/rachel-v-rigodon">LinkedIn</a></h6>
+            <p>
+                I'm a Brooklyn bred and Florida raised web developer with a passion for storytelling. My favorite author is Francesca Lia Block and my favorite musical artists are Hannah Fury and Orion Rigel Dommisse, because I am absolutely in love with magical surreality.
+                <br> It is my fingerprint in all the work I do from web development to writing. My favorite storytelling medium so far is animation, however I'm not very good at it, so I'm content to just watch. I'm a graduate of General Assembly and Per Scholas's Codebridge course.
             </p>
         </div>
-    </div>
-    <div class="maze">
-        <div class="box">
-            <h1>Weather Teller</h1>
-            <p>The Weather Teller is a fortune teller for weather. It uses an Api call to render the min-max temperature in celsius, description, and town name based on what zipcode the user inputs. It is mobile first and very mystical.</p>
+        <div>
+            <img src="images/bird.jpg">
         </div>
-        <img class="mazepic" src="images/weather.png">
-    </div>
-    <div class="maze">
-        <img class="mazepic" src="images/story.png">
-        <div class="box">
-            <h1>y(our) story</h1>
-            <p>Be part of a world-wide story. Add a 'chapter' to the website and have your story continued by someone else, or you can continue someone else's story. There are delete and edit buttons for each chapter. The end and beginning of the story are all decided by the users, and it is all anonymous.
-            </p>
+        <div id="toolbox">
+            <h1>Technical Toolbox</h1>
+            <p>CSS, HTML, Javascript, PSQL, Express, React.js, SASS, Materialize, GIT, Node.js, PSQL, Firebase, UX, Wireframing, Web Services API, Express, Ruby, Ruby on Rails.</p>
         </div>
     </div>
-    <div class="maze">
-        <div class="box">
-            <h1>The Valculator</h1>
-            <p>An all in one piano and calculator. Press the keys to make a beatiful noise and get an accurate calculation. Add, subtract, divide, you name it. This was created with javascript, and a lot of css.</p>
+    <!-- this is where the header ends -->
+   <!--  this is where the slideshow begins -->
+   <section>
+   <h1>Projects</h1>
+    <div id="slides">
+
+        <div class="maze">
+            <div class="box">
+                <h1>Oogie's Labyrinth</h1>
+                <p>Oogie's Labyrinth is a game where the aim is to navigate the mouse through the maze without getting hit, and then pressing the button at the end. There is currently only one level. The way you win is to get throuhg the maze without hitting any of the moving enemies. If you hit one, you will be alerted, and sent back to the beginning of the game. There is also a little player on the screen that can be controlled, however it cannot affect, nor be affected by the gameboard. It might be helpful to use alongside with the cursor. I programmed the board to move up when the player div moves so that it wouldn't be hidden behind the the overflow: hidden styling.</p>
+            </div>
+            <img class="mazepic" src="images/game.png">
         </div>
-        <img class="mazepic" src="images/piano.png">
-    </div>
-    <footer>
+        <div class="maze">
+            <img class="mazepic" src="images/travello2.png">
+            <div class="box">
+                <h1>Travello</h1>
+                <p>Travello was designed to facilitate the organizing and logging of group trips. We have seen that popular travel apps are focused on the individual and the logistics to the exclusion of the social. This forces travelers to utilize multiple platforms to organize, record, and collaborate on their group adventures which leads to a disjointed overall experience. While group email threads, Slack, and speadsheets offer a centralized location, Travello offers travelers an opportunity to divorce themselves from everyday-use apps. Our target demographic are people looking for travel ideas/inspiration, backpackers, and friend groups from different locations on the map.
+                </p>
+            </div>
+        </div>
+        <div class="maze">
+            <div class="box">
+                <h1>Weather Teller</h1>
+                <p>The Weather Teller is a fortune teller for weather. It uses an Api call to render the min-max temperature in celsius, description, and town name based on what zipcode the user inputs. It is mobile first and very mystical.</p>
+            </div>
+            <img class="mazepic" src="images/weather.png">
+        </div>
+        <div class="maze">
+            <img class="mazepic" src="images/story.png">
+            <div class="box">
+                <h1>y(our) story</h1>
+                <p>Be part of a world-wide story. Add a 'chapter' to the website and have your story continued by someone else, or you can continue someone else's story. There are delete and edit buttons for each chapter. The end and beginning of the story are all decided by the users, and it is all anonymous.
+                </p>
+            </div>
+        </div>
+        <div class="maze">
+            <div class="box">
+                <h1>The Valculator</h1>
+                <p>An all in one piano and calculator. Press the keys to make a beatiful noise and get an accurate calculation. Add, subtract, divide, you name it. This was created with javascript, and a lot of css.</p>
+            </div>
+            <img class="mazepic" src="images/piano.png">
+        </div>
+        </div>
+        </section>
+
+  <!--   this is where the projects end -->
+    <footer id="footer">
         <h1>Thank you for visiting!</h1>
         <h3>Feel free to contact me at Rvrigodon@gmail.com</h3>
     </footer>
 </body>
+<script>
+$(function() {
+    $("#slides").slidesjs({
+        pagination: {
+            active: false
+        },
+        width: 940,
+        height: 528,
+        play: {
+            active: true,
+            auto: true,
+            interval: 5000,
+            swap: true
+        }
+    });
+});
+</script>
 
 </html>
